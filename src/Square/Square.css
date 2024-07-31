@@ -1,0 +1,50 @@
+@media (min-width: 1200px) {
+.square-item{
+    width: 90px;
+    height: 90px;
+    background-color: blueviolet;
+}
+.square-item:hover{
+    transform: translateY(-5px);
+}
+img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.square-item {
+    width: 75px;
+    height: 75px;
+    background-color: blueviolet;
+  }
+
+  .square-item:hover {
+    transform: translateY(-4px);
+  }
+  
+  img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+}
+
+/* Small screen */
+@media (max-width: 767px) {
+    .square-item {
+        width: 60px;
+        height: 60px;
+        background-color: blueviolet;
+      }
+    
+      .square-item:hover {
+        transform: translateY(-3px);
+    }  
+    img {
+        width: 60px;  /* Makes the image fill the width of the parent */
+        height: 60px; /* Makes the image fill the height of the parent */
+      } 
+}
